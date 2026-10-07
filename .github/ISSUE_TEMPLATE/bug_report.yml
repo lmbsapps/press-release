@@ -1,0 +1,36 @@
+name: Bug report
+description: Something in Press Release doesn't work as it should
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead. A screenshot or screen recording helps a lot.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Phone and Android version
+      placeholder: Pixel 9, Android 16
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Press Release version
+      description: More › About
+      placeholder: "1.0"
+    validations:
+      required: true
+  - type: input
+    id: button
+    attributes:
+      label: Which button and animation
+      description: For example volume down with Jelly, or an extra key you added.
+  - type: textarea
+    id: setup
+    attributes:
+      label: Anything about your setup
+      description: Screen rotation, other accessibility services that are on, Size and Speed, black or white.
